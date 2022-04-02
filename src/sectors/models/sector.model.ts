@@ -1,5 +1,5 @@
-import { EntityModel } from '../../generic-crud/entity.Model';
+import { EntityModel } from '../../generic-crud/entity.model';
 
 export class SectorModel extends EntityModel {
-  // name: string;
+  createdAt: Date;
 }

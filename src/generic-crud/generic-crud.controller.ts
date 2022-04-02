@@ -10,7 +10,7 @@ import {
 import { Document } from 'mongoose';
 
 import { IGenericCrudService } from './generic-crud.service';
-import { EntityModel } from './entity.Model';
+import { EntityModel } from './entity.model';
 
 export class GenericCrudController<
   TEntity extends EntityModel,

@@ -1,4 +1,4 @@
-import { EntityModel } from '../../generic-crud/entity.Model';
+import { EntityModel } from '../../generic-crud/entity.model';
 import { PermissionGroupModel } from '../../permission-groups/models/permission-group.model';
 
 export class UserModel extends EntityModel {
@@ -7,4 +7,5 @@ export class UserModel extends EntityModel {
   password: string;
   birthDate: Date;
   permissionGroup: PermissionGroupModel | string;
+  createdAt: Date;
 }

@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { Model, Document } from 'mongoose';
 
-import { EntityModel } from './entity.Model';
+import { EntityModel } from './entity.model';
 
 export interface IGenericCrudService<
   TEntity extends EntityModel,
