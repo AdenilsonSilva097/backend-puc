@@ -11,8 +11,8 @@ export class Sector implements SectorModel {
   @Prop()
   id: string;
 
-  // @Prop()
-  // name: string;
+  @Prop()
+  nome: string;
 
   @Prop({ default: () => new Date() })
   createdAt: Date;
