@@ -19,4 +19,11 @@ export class SectorAddressesService extends GenericCrudService<
   ) {
     super(sectorAddressModel);
   }
+
+  async findBySectorId(sectorId: string) {
+    const sector = await this.sectorAddressModel.find({ sectorId }).exec();
+    if (!sector) return undefined;
+    // return sector.toJSON() as any as SectorAddress;
+    return sector.map((t) => t.toJSON() as any as SectorAddress);
+  }
 }
