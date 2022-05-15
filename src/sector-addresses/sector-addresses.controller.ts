@@ -15,7 +15,7 @@ export class SectorAddressesController extends GenericCrudController<
   }
 
   @Get('sector/:sectorId')
-  async findByEmail(@Param('sectorId') sectorId: string) {
+  async findBySectorId(@Param('sectorId') sectorId: string) {
     const entity = await this.sectorAddressesService.findBySectorId(sectorId);
     if (!entity) {
       throw new NotFoundException('Entity does not exist!');
