@@ -25,7 +25,6 @@ export class SectorAddressesService extends GenericCrudService<
       .find({ setor: sectorId })
       .exec();
     if (!sector) return undefined;
-    // return sector.toJSON() as any as SectorAddress;
     return sector.map((t) => t.toJSON() as any as SectorAddress);
   }
 }
