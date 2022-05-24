@@ -11,8 +11,20 @@ export class Receipt implements ReceiptModel {
   @Prop()
   id: string;
 
-  // @Prop()
-  // name: string;
+  @Prop()
+  idDoador: string;
+
+  @Prop()
+  valor: number;
+
+  @Prop()
+  dataEmissao: Date;
+
+  @Prop()
+  idMensageiro: string;
+
+  @Prop()
+  status: string;
 
   @Prop({ default: () => new Date() })
   createdAt: Date;
