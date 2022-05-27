@@ -11,8 +11,14 @@ export class DonationProtocol implements DonationProtocolModel {
   @Prop()
   id: string;
 
-  // @Prop()
-  // name: string;
+  @Prop()
+  idGuiaDoacao: string;
+
+  @Prop()
+  valor: number;
+
+  @Prop({ default: () => new Date() })
+  dataRecebimento: Date;
 
   @Prop({ default: () => new Date() })
   createdAt: Date;
