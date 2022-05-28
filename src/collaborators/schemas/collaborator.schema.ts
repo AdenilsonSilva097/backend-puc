@@ -24,6 +24,9 @@ export class Collaborator implements CollaboratorModel {
   cargo: string;
 
   @Prop()
+  idUsuario: string;
+
+  @Prop()
   nome: string;
 
   @Prop()

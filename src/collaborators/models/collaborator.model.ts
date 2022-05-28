@@ -5,6 +5,7 @@ export class CollaboratorModel extends EntityModel {
   id: string;
   createdAt: Date;
   cargo: string;
+  idUsuario: string;
   permissionGroup: PermissionGroupModel | string;
   nome: string;
   telefone: string;
